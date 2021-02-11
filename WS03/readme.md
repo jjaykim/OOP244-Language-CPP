@@ -1,5 +1,4 @@
-# Week 3 - Workshop
-: Member Functions and Privacy
+# Week 3 - Workshop : Member Functions and Privacy
 
 ## Learning
 - to define a class type
