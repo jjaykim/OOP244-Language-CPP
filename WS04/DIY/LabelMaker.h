@@ -33,7 +33,5 @@ namespace sdds {
     // Prints the Labels
     void printLabels();
   };
-
 }
-
 #endif // !SDDS_LABELMARKER_H_

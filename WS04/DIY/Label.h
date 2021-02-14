@@ -9,17 +9,16 @@
 
 #ifndef SDDS_LABEL_H_
 #define SDDS_LABEL_H_
-const char defaultSymbol[9] = "+-+|+-+|";
 
 using namespace std;
 
 namespace sdds {
+  const char defaultSymbol[9] = "+-+|+-+|";
+
   class Label
   {
     char symbol[9];
     char *oneLineText;
-
-    // void setToDefault();
 
   public:
     // Creates an empty label and defaults the frame to defaultSymbol
@@ -42,5 +41,4 @@ namespace sdds {
     std::ostream &printLabel() const;
   };
 }
-
 #endif // !SDDS_LABEL_H_

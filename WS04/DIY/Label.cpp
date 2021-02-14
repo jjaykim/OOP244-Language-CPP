@@ -60,7 +60,7 @@ namespace sdds {
     char content[71];
 
     cout << "> ";
-    // eads the label from console up to 70 characters
+    // reads the label from console up to 70 characters
     cin.get(content, 71);
 
     // Make a clean in buffer
