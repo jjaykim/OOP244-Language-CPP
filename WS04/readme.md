@@ -1,8 +1,7 @@
-# Workshop #4: Constructors Destructors and Current object
+# Workshop 4 - Constructors Destructors and Current object
 
-## Learning Outcomes
+## Learning
 
-Upon successful completion of this workshop, you will have demonstrated the abilities to:
 - define a default constructor
 - define custom constructors with different number of arguments
 - define a Destructor to prevent memory leaks.
