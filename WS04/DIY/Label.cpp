@@ -59,6 +59,11 @@ namespace sdds {
   {
     char content[71];
 
+    if (oneLineText != nullptr) {
+      delete[] oneLineText;
+      oneLineText = nullptr;
+    }
+
     cout << "> ";
     // reads the label from console up to 70 characters
     cin.get(content, 71);
