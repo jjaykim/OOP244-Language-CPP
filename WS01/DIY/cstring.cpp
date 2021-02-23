@@ -67,8 +67,8 @@ namespace sdds
         i++;
       }
 
-      // Set the last index to be NULL value
     }
+    // Set the last index to be NULL value
     des[i] = '\0';
   }
 
