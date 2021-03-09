@@ -35,8 +35,8 @@ namespace sdds
     Mark &operator+=(const int input);
     Mark &operator=(const int input);
 
-    // ====================== Helper functions ======================
-    friend int operator+=(int &_value, const Mark &_add);
   };
+  // ====================== Helper functions ======================
+  int operator+=(int &_value, const Mark &_add);
 }
 #endif

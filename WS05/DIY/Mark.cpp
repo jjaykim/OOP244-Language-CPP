@@ -87,8 +87,10 @@ namespace sdds {
   int operator+=(int &_value, const Mark &_add)
   {
     // Mark can be added to an integer && Invalid marks will not add any value to the integer
-    if (_add._mark >= 0 && _add._mark <= 100)
-      _value += _add._mark;
+    int temp = int(_add);
+
+    if (temp >= 0 && temp <= 100)
+      _value += temp;
 
     return _value;
   }
