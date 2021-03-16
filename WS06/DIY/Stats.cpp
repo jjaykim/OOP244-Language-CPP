@@ -89,7 +89,6 @@ namespace sdds
     m_noOfColumns = _numCol;
     m_precision   = _precision;
     m_noOfList    = 0;
-    m_sort        = NON_SORT;
   }
 
   Stats::Stats(const char *_filename, unsigned _colWidth, unsigned _numCol, unsigned _precision)
@@ -98,7 +97,6 @@ namespace sdds
     m_noOfColumns = _numCol;
     m_precision   = _precision;
     m_noOfList    = 0;
-    m_sort        = NON_SORT;
 
     ifstream readFile(_filename);
 
@@ -118,7 +116,6 @@ namespace sdds
     this->m_noOfColumns = src.m_noOfColumns;
     this->m_precision   = src.m_precision;
     this->m_noOfList    = src.m_noOfList;
-    this->m_sort        = src.m_sort;
 
     // Deep copying
     if (this != &src) {
@@ -147,7 +144,6 @@ namespace sdds
         this->m_noOfColumns = src.m_noOfColumns;
         this->m_precision   = src.m_precision;
         this->m_noOfList    = src.m_noOfList;
-        this->m_sort        = src.m_sort;
 
         saveAs(m_filename, src.m_filename);
         loadValue();

@@ -15,20 +15,12 @@ namespace sdds
 {
   const char m_prefix[3] = "C_";
 
-  enum Sort
-  {
-    NON_SORT,
-    ASC_ORDER,
-    DESC_ORDER
-  };
-
   class Stats
   {
     unsigned m_columnWidth;
     unsigned m_noOfColumns;
     unsigned m_precision;
     unsigned m_noOfList;
-    unsigned m_sort;
     char     *m_filename{nullptr};
     double   *m_eachValue{nullptr};
 
