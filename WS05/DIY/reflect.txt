@@ -1,0 +1,13 @@
+//==============================================
+// Name:           Jungjoo Kim
+// Student Number: 162 641 195
+// Email:          jkim594@myseneca.ca
+// Section:        NCC
+// Workshop:       Workshop5_DIY
+//==============================================
+
+	Through this workshop, I was able to learn and practice overload member operators using the overload skill I learned before. I can overload various operators in C++, and I used Binary, assignment, and type conversion a lot. I believe that overloading operators create concise and legible code by overloading operators instead of code where computational expressions can become complex. However, an important point in overloading an operator is to clearly know what type of variable will come to the left of the operator, and it is also important to identify which type of variable will work with. The left operator becomes the current object. For example, Account &operator+=(const double _into) or Account &operator=(Account &_move). The most interesting thing for me was the type conversion. The reason is that I only knew how to temporarily change the type of variable using casting, but I have never thought I could get the value I wanted by overloading the type at all. The important thing while overloading type conversion is that it should be made into a function of const type.  This is because the value of the current object should not be changed.
+
+	Finally, there is a function that helps the class outside the class, not the member operator. This is called the Helper function. Furthermore, if I provide friend keywords to the Helper function while defining the class, the Helper function can access private members of the class. For instance, friend int operator+=(int &_value, const Mark &_add).
+
+	At the end of this workshop, I felt that I could overload the operator and code it more readable and neatly. However, I thought that if I overloaded too many kinds of operators for myself, it could be more complicated when someone else read my code. I should have the skill of overloading operators that are clear and understandable to others.
