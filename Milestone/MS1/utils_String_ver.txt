@@ -1,0 +1,108 @@
+enum ERROR_TYPE {
+  NON_ERROR,
+  INVALID_ERROR,
+  AFTER_CHAR_ERROR
+};
+
+int checkInt(const string src)
+  {
+    int i         = 0;
+    bool flag     = false;
+
+    while (src[i] && !flag) {
+      if (src[i] == ' ') flag = true;
+      else if (isalpha(src[i])) flag = true;
+      else i++;
+
+    }
+
+    if (!flag) i = 0;
+    else if (i == 0 && flag) i = INVALID_ERROR;
+    else if (i > 0 && flag) i = AFTER_CHAR_ERROR;
+
+    return i;
+  }
+
+  int getInt(const char *prompt)
+  {
+    string _input;
+    bool flag = false;
+
+    // displayed before the entry as a prompt
+    if (prompt) cout << prompt;
+
+    do {
+      getline(cin, _input);
+
+      switch(checkInt(_input)) {
+        case INVALID_ERROR:
+          cout << "Bad integer value, try again: ";
+          break;
+
+        case AFTER_CHAR_ERROR:
+          cout << "Enter only an integer, try again: ";
+          break;
+
+        default:
+          flag = true;
+          break;
+      }
+    } while (!flag);
+
+    return stoi(_input);
+  }
+
+  int getInt(int min, int max, const char *prompt,
+              const char *errorMessage, bool showRangeAtError)
+  {
+    string _input;
+    bool flag = false;
+
+    // displayed before the entry as a prompt
+    if (prompt) cout << prompt;
+
+    do {
+      getline(cin, _input);
+
+      switch(checkInt(_input)) {
+        case INVALID_ERROR:
+          cout << "Bad integer value, try again: ";
+          break;
+
+        case AFTER_CHAR_ERROR:
+          cout << "Enter only an integer, try again: ";
+          break;
+
+        default:
+          if ((stoi(_input) < min || stoi(_input) > max) && showRangeAtError)
+          {
+            cout << errorMessage << " [" << min << " <= value <= "
+              << max << "]: ";
+          }
+          else if ((stoi(_input) < min || stoi(_input) > max) && !showRangeAtError)
+          {
+            cout << errorMessage;
+          }
+          else flag = true;
+          break;
+      }
+    } while (!flag);
+
+    return stoi(_input);
+  }
+
+
+ char *getcstr(const char *prompt, std::istream &istr, char delimiter)
+  {
+    // string _input;
+    // char *_outString;
+    // int  i = 0;
+
+    // if (prompt) cout << prompt;
+    // getline(istr, _input, delimiter);
+
+    // _outString = new char[strlen(_input.c_str()) + 1];
+    // strcpy(_outString, _input.c_str());
+
+    // return _outString;
+  }
