@@ -118,15 +118,13 @@ namespace sdds
     this->m_noOfList    = src.m_noOfList;
 
     // Deep copying
-    if (this != &src) {
-      if (src.m_eachValue && src.m_noOfList > 0) {
-        m_filename = new char[strLen(m_prefix) + strLen(src.m_filename) + 1];
-        strCpy(m_filename, m_prefix);
-        strCat(m_filename, src.m_filename);
+    if (src.m_eachValue && src.m_filename) {
+      m_filename = new char[strLen(m_prefix) + strLen(src.m_filename) + 1];
+      strCpy(m_filename, m_prefix);
+      strCat(m_filename, src.m_filename);
 
-        saveAs(m_filename, src.m_filename);
-        loadValue();
-      }
+      saveAs(m_filename, src.m_filename);
+      loadValue();
     }
   }
 
