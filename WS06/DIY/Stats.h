@@ -43,7 +43,6 @@ namespace sdds
     std::ostream &display(std::ostream &ostr) const;
 
     unsigned occurrence(double min, double max, std::ostream &ostr = std::cout) const;
-    // void sort(const char *str, const unsigned _colWidth, const unsigned _precision) const;
     void sort(const bool ascending);
     std::istream &getFile(std::istream &istr);
 
