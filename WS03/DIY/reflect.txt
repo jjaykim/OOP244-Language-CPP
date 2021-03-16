@@ -1,0 +1,13 @@
+//==============================================
+// Name:           Jungjoo Kim
+// Student Number: 162 641 195
+// Email:          jkim594@myseneca.ca
+// Section:        NCC
+// Workshop:       Workshop3_DIY
+//==============================================
+
+	During this workshop, I was able to learn how to handle objects in C++, an object-oriented language.
+
+	First, I can instantiate one object using class. It can include variables and functions, which are called member variables and member functions. In addition, I can specify their scope using private and public keywords. It is declared private by default, but if it is scoped to public, it can be accessed not only from within the class but also from outside. In this workshop, I used the member functions as a query or modify method. A query function is a function that prevents the state of an object from changing with a role such as const. For example, void display() constant. However, the modify function can change the value of the member variable. For example, I can allocate the inputted value in a member variable, or I can make the member variable into an empty state. When accessing a publicly declared member variable from the outside, you can access it by using "."
+
+	Also, I could use several member functions of iosream with cout in this workshop. The range of these member functions was public and could be accessed from the outside using ".". First, there are useful functions setf, width, fill, and unsetf when outputting a table with the neat format. Setf and unsetf determine the alignment or format. For example, cout.setf (ios::left) that is left alignment or cout.setf (ios::fixed) that holds the format. And I can use the width to set the spacing. The fill can also be used to fill the empty space with the desired characters up to the size I set with width. Lastly, the alignment or format designated as unsetf should be released.  Finally, the decimal places can also be determined using the precision.
