@@ -1,6 +1,7 @@
 # Milestone 1
 
 ## Completed Modules
+
 ### utils Module  
 - getInt  : receives the integer input from the user  
 - getcstr : receives the string input from the user
