@@ -1,0 +1,102 @@
+Script started on Wed 10 Feb 2021 02:18:13 PM EST
+==160892== Memcheck, a memory error detector
+==160892== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==160892== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==160892== Command: ws
+==160892== 
+ Five good ones and 4 bad ones:
+ Capacity,  Dimensions            Volume     Content
+------------------------------    ---------  ---------------------------
+ 1000.0cc (13.0x10.0) Canister
+ 1000.0cc (13.0x10.0) Canister
+ 1000.0cc (13.0x10.0) Canister of     0.0cc   Orange Juice
+28085.6cc (40.0x30.0) Canister
+ 1549.8cc (20.0x10.0) Canister of     0.0cc   Olive Oil
+ 1000.0cc (13.0x10.0) Canister of Unusable content, discard!
+ 1000.0cc (13.0x10.0) Canister of Unusable content, discard!
+ 1000.0cc (13.0x10.0) Canister of Unusable content, discard!
+ 1000.0cc (13.0x10.0) Canister of Unusable content, discard!
+------------------------------------------------------------------------
+
+ All good:
+ Capacity,  Dimensions            Volume     Content
+------------------------------    ---------  ---------------------------
+ 1000.0cc (13.0x10.0) Canister
+ 1000.0cc (13.0x10.0) Canister
+ 1000.0cc (13.0x10.0) Canister of     0.0cc   Orange Juice
+28085.6cc (40.0x30.0) Canister
+ 1549.8cc (20.0x10.0) Canister of     0.0cc   Olive Oil
+ 1000.0cc (13.0x10.0) Canister
+ 1000.0cc (13.0x10.0) Canister
+ 1000.0cc (13.0x10.0) Canister
+ 1000.0cc (13.0x10.0) Canister
+------------------------------------------------------------------------
+
+ Milk canisters
+ Capacity,  Dimensions            Volume     Content
+------------------------------    ---------  ---------------------------
+ 1000.0cc (13.0x10.0) Canister of   500.0cc   Milk
+ 1000.0cc (13.0x10.0) Canister of     0.0cc   MilK
+------------------------------------------------------------------------
+
+ Poured one into another
+ Capacity,  Dimensions            Volume     Content
+------------------------------    ---------  ---------------------------
+ 1000.0cc (13.0x10.0) Canister of     0.0cc   Milk
+ 1000.0cc (13.0x10.0) Canister of   500.0cc   Milk
+------------------------------------------------------------------------
+
+ Poured 800ccs into the empty canister
+ Capacity,  Dimensions            Volume     Content
+------------------------------    ---------  ---------------------------
+ 1000.0cc (13.0x10.0) Canister of   800.0cc   Milk
+------------------------------------------------------------------------
+
+ Filled one with the milk from another
+ Capacity,  Dimensions            Volume     Content
+------------------------------    ---------  ---------------------------
+ 1000.0cc (13.0x10.0) Canister of   300.0cc   Milk
+ 1000.0cc (13.0x10.0) Canister of  1000.0cc   Milk
+------------------------------------------------------------------------
+
+ Poured 1500ccs of Olive oil into Olive oil canister
+ Capacity,  Dimensions            Volume     Content
+------------------------------    ---------  ---------------------------
+ 1549.8cc (20.0x10.0) Canister of  1500.0cc   Olive Oil
+------------------------------------------------------------------------
+
+ Filled can of milk with olive oil
+ Capacity,  Dimensions            Volume     Content
+------------------------------    ---------  ---------------------------
+ 1549.8cc (20.0x10.0) Canister of   799.9cc   Olive Oil
+ 1000.0cc (13.0x10.0) Canister of Unusable content, discard!
+------------------------------------------------------------------------
+
+ Poured too much into olive oil canister
+ Capacity,  Dimensions            Volume     Content
+------------------------------    ---------  ---------------------------
+ 1549.8cc (20.0x10.0) Canister of Unusable content, discard!
+------------------------------------------------------------------------
+
+ All bad
+ Capacity,  Dimensions            Volume     Content
+------------------------------    ---------  ---------------------------
+28085.6cc (40.0x30.0) Canister of Unusable content, discard!
+ 1549.8cc (20.0x10.0) Canister of Unusable content, discard!
+ 1000.0cc (13.0x10.0) Canister of Unusable content, discard!
+ 1000.0cc (13.0x10.0) Canister of Unusable content, discard!
+ 1000.0cc (13.0x10.0) Canister of Unusable content, discard!
+ 1000.0cc (13.0x10.0) Canister of Unusable content, discard!
+------------------------------------------------------------------------
+
+==160892== 
+==160892== HEAP SUMMARY:
+==160892==     in use at exit: 0 bytes in 0 blocks
+==160892==   total heap usage: 8 allocs, 8 frees, 72,757 bytes allocated
+==160892== 
+==160892== All heap blocks were freed -- no leaks are possible
+==160892== 
+==160892== For lists of detected and suppressed errors, rerun with: -s
+==160892== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Wed 10 Feb 2021 02:18:14 PM EST
