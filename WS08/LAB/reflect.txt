@@ -1,0 +1,13 @@
+//==============================================
+// Name:           Jungjoo Kim
+// Student Number: 162 641 195
+// Email:          jkim594@myseneca.ca
+// Section:        NCC
+// Workshop:       Workshop8_DIY
+//==============================================
+
+	In this workshop and Milestone 2, I was able to learn more deeply about inheritance concepts that I learned last week. Moreover, I had a chance to learn more about the polymorphism of C++ and it was interesting. For the first time, I could learn the function of c++ called virtual function. First, a virtual function literally uses the keyword "virtual" to make it a virtual function. The reason for using such a virtual function is to override the function of the base class from the derived class. And when overriding a virtual function, the virtual function of the derived class must have the same as the base class (shape as the return type, parameter, and function name). Also, if I use these same virtual functions, my computers determine who the real objects are at runtime. This is called dynamic binding.
+
+	If I add some keywords to the virtual functions, I can create a pure virtual function. The pure virtual function's form is virtual void getSpecs(std::istream &istr) = 0;. A class that has a pure virtual function is called "abstract base class". This class does not have a definition of a function and cannot create an instance. In other words, this class only serves to provide the body of the function to other derived classes to override. The class of overriding a pure virtual function is called a concrete class. The function can override a pure virtual function to fit the purpose of the class, and the class can create an instance. The last important point is the destructor. In situations where classes inherit from each other, the destructor should be made a virtual function because both the actual and the underlying objects must be destroyed.
+
+	It is possible to seem difficult these terms such as pure virtual functions, abstract base class, and concrete class and feel complicate this logic, but I was able to organize the concept clearly and practiced enough during this workshop and milestone 2. It was very interesting to create one abstract base class and inherit it with several concrete classes and redefine the function as another way of my own.
