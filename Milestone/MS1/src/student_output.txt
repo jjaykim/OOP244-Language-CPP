@@ -1,0 +1,120 @@
+Script started on Mon 15 Mar 2021 02:28:55 PM EDT
+==163924== Memcheck, a memory error detector
+==163924== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==163924== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==163924== Command: ms
+==163924== 
+getInt tester:
+Enter 11: 11
+11
+
+Enter the following values at the prompt: 
+abc<ENTER>
+9abc<ENTER>
+9 <ENTER> (there is a space after 9)
+9<ENTER>
+> abc
+Bad integer value, try again: 9abc
+Enter only an integer, try again: 9 
+Enter only an integer, try again: 9
+9
+
+Enter the following values at the prompt: 
+abc<ENTER>
+9<ENTER>
+10<ENTER>
+21<ENTER>
+21 <ENTER> (there is a space after 21)
+20<ENTER>
+> abc
+Bad integer value, try again: 9
+Value must be between 10 and 20: 10
+> 21
+Invalid value, retry [10 <= value <= 20]: 21 
+Enter only an integer, try again: 20
+last value entered: 20
+Copy and paste the following at the prompt:
+If you didn't care what happened to me, And I didn't care for you, We would zig zag our way through the boredom and pain, Occasionally glancing up through the rain. Wondering which of the brothers to blame. And watching for pigs on the wing.
+Paste here /> If you didn't care what happened to me, And I didn't care for you, We would zig zag our way through the boredom and pain, Occasionally glancing up through the rain. Wondering which of the brothers to blame. And watching for pigs on the wing.
+you entered:
+If you didn't care what happened to me, And I didn't care for you, We would zig zag our way through the boredom and pain, Occasionally glancing up through the rain. Wondering which of the brothers to blame. And watching for pigs on the wing.
+E: 00:00
+D: 23:05
+C: 01:05
+  D        C     D-=C
+23:05 -= 01:05 = 22:00
+
+  C        D     C-=D
+01:05 -= 22:00 = 03:05
+
+  C        D     C+=D
+03:05 += 22:00 = 25:05
+
+ C = 245u
+C: 04:05
+
+ D = 2760u
+D: 46:00
+
+  E   =   C   +   D
+50:05 = 04:05 + 46:00
+
+  E   =   C   -   D
+06:05 = 04:05 - 46:00
+
+C: 04:05
+ C *= 2u;
+C: 08:10
+ C *= 12u
+C: 98:00
+
+ C = 245u
+C: 04:05
+
+  E   =   C   *  2u
+08:10 = 04:05 *  2u
+
+  E   =   C   *  12u
+49:00 = 04:05 *  12u
+
+C: 04:05
+ C /= 2u;
+C: 02:02
+ C = 245u
+C: 04:05
+
+  E   =   C   /  2u
+02:02 = 04:05 /  2u
+
+E: 02:02
+D: 46:00
+C: 04:05
+
+Enter the following values at the prompt:
+aa:bb<ENTER>
+12,12<ENTER>
+-12:12<ENTER>
+12:-12
+12:12
+Please enter the time (HH:MM): aa:bb
+Bad time entry, retry (HH:MM): 12,12
+Bad time entry, retry (HH:MM): -12:12
+Bad time entry, retry (HH:MM): 12:-12
+Bad time entry, retry (HH:MM): 12:12
+you entered: 12:12
+
+Enter 100:100 at the prompt: 
+Enter current time: 100:100
+101:40
+The actual system time is: 14:29
+==163924== 
+==163924== HEAP SUMMARY:
+==163924==     in use at exit: 0 bytes in 0 blocks
+==163924==   total heap usage: 10 allocs, 10 frees, 75,860 bytes allocated
+==163924== 
+==163924== All heap blocks were freed -- no leaks are possible
+==163924== 
+==163924== For lists of detected and suppressed errors, rerun with: -s
+==163924== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Mon 15 Mar 2021 02:29:34 PM EDT
