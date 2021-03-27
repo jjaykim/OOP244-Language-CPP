@@ -1,0 +1,106 @@
+Script started on Tue 26 Jan 2021 11:41:11 PM EST
+==15927== Memcheck, a memory error detector
+==15927== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==15927== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==15927== Command: ws
+==15927== 
+Employee Salary report, sorted by employee number
+no- Empno, Name, Salary
+------------------------------------------------
+1- 102987: Uter Zorker, 32044.5
+2- 108479: Gloria Jailbird, 59644.8
+3- 109635: Kirk Van Houten, 96730.1
+4- 149100: Edna Krabappel, 16614
+5- 155002: Luigi Risotto, 74713.2
+6- 158483: Bernice Hibbert, 44332.1
+7- 170299: Luann Van Houten, 70859.1
+8- 176719: Patty Bouvier, 35185.4
+9- 187174: Todd Flanders, 48791.7
+10- 207796: Selma Bouvier, 29207.3
+11- 236104: Janey Powell, 44415.9
+12- 253003: Rainier Wolfcastle, 81899.6
+13- 253162: Cletus Spuckler, 50354.9
+14- 261302: Manjula Nahasapeemapetilon, 79212.8
+15- 275029: Sea Captain, 22011.9
+16- 276833: Drederick Tatum, 70364.6
+17- 285921: Judge Roy Snyder, 61369.3
+18- 308049: Allison Taylor, 40057.2
+19- 327106: Miss Springfield, 28263.1
+20- 350140: Bart Simpson, 50654.9
+21- 353430: Moe Szyslak, 82461.2
+22- 357586: Kumiko Albertson, 75044
+23- 367134: Maude Flanders[D], 55835.6
+24- 373448: Snake Jailbird, 90664
+25- 377870: Mona Simpson, 25264.1
+26- 402395: Troy McClure, 12900
+27- 406485: Abraham Simpson, 94900.9
+28- 446035: Waylon Smithers, 42771.7
+29- 448213: Jessica Lovejoy, 33842.6
+30- 454283: Sideshow Mel, 35733.1
+31- 460841: Milhouse Van Houten, 72350
+32- 470884: Bumblebee Man, 61290.2
+33- 477011: Groundskeeper Willie, 45809.3
+34- 477647: Kearney Zzyzwicz, 50212.5
+35- 495969: Ned Flanders, 68762.9
+36- 515578: Lunchlady Doris, 58345.6
+37- 517443: Roger Meyers Jr., 23511
+38- 521115: Lindsey Naegle, 73202.9
+39- 550187: Akira Kurosawa, 30653.1
+40- 554581: Disco Stu, 40584.9
+41- 572254: Artie Ziff, 97674.9
+42- 591274: Jasper Beardly, 88107.3
+43- 598486: Elizabeth Hoover, 95446.2
+44- 608798: Alice Glick, 96280
+45- 622364: Rabbi Hyman Krustofsky, 70664.6
+46- 631517: Brandine Spuckler, 65247.6
+47- 637072: Helen Lovejoy, 86650.4
+48- 638669: Squeaky-Voiced Teen, 34609.8
+49- 639410: Johnny Tightlips, 38956.5
+50- 665240: Ralph Wiggum, 34139.5
+51- 686803: Dewey Largo, 88232.4
+52- 688380: Gil Gunderson, 77146.5
+53- 693496: Jimbo Jones, 67025.2
+54- 693781: Surly Duff, 27962.8
+55- 705255: Lionel Hutz, 92182.1
+56- 718309: Seymour Skinner, 36009.3
+57- 724280: Ruth Powers, 17625.9
+58- 730216: Lisa Simpson, 38567.4
+59- 740355: Comic Book Guy, 66312
+60- 749313: Hans Moleman, 60565
+61- 761697: Chazz Busby, 79886.9
+62- 771008: Wendell Borton, 61877.9
+63- 792024: Carl Carlson, 79533.1
+64- 806593: Martin Prince, 12764.9
+65- 821672: Rod Flanders, 38616.7
+66- 839527: Ling Bouvier, 17206.8
+67- 847792: Shauna Chalmers, 78318.9
+68- 859792: Wise Guy, 34298.2
+69- 871378: Agnes Skinner, 79964.4
+70- 875547: Maggie Simpson, 53521.3
+71- 878214: Baby Gerald, 37182.3
+72- 889289: Lenny Leonard, 95376.2
+73- 908662: Sarah Wiggum, 72715.5
+74- 913082: The Rich Texan, 85464.4
+75- 926250: Dolph Starbeam, 98381.3
+76- 929790: Barney Gumble, 76436.3
+77- 931514: Apu Nahasapeemapetilon, 10109.6
+78- 936614: Herman Hermann, 37226
+79- 943078: Homer Simpson, 61618.3
+80- 950247: Krusty The Clown, 22674.4
+81- 960618: Old Jewish Man, 58977
+82- 969427: Kent Brockman, 55866
+83- 991400: Nelson Muntz, 80738.8
+84- 995718: Jacqueline Bouvier, 47685
+85- 997032: Mayor Joe Quimby, 72657.4
+86- 999039: Marge Simpson, 50262.1
+==15927== 
+==15927== HEAP SUMMARY:
+==15927==     in use at exit: 0 bytes in 0 blocks
+==15927==   total heap usage: 89 allocs, 89 frees, 76,624 bytes allocated
+==15927== 
+==15927== All heap blocks were freed -- no leaks are possible
+==15927== 
+==15927== For lists of detected and suppressed errors, rerun with: -s
+==15927== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Tue 26 Jan 2021 11:41:11 PM EST
