@@ -1,0 +1,15 @@
+//==============================================
+// Name:           Jungjoo Kim
+// Student Number: 162 641 195
+// Email:    	   jkim594@myseneca.ca
+// Section:        NCC
+// Workshop:       Workshop9_DIY
+//==============================================
+
+	During this workshop, I could learn more about template. I think Template is the most difficult part I've ever learned. However, I personally studied a lot for this workshop, and I could use what I studied during the workshop.
+
+	I implemented a total of two template functions. The first template function is void "listArray Elements (const char *_title, const T *_arr, int_num).  In order to use this template function, main.cpp handed it over to the format "ListArray Elements" ("All the cars:", C, 7);". This function is a function that receives various types of arrays, titles, and number of arrays, and outputs them to the console. I can enter various types of arrays using <typename T> rather than one type of array. As CPP compiles, the template function determines the type of array received.    The operator "<<" function of ReadWrite, which is an abstract base class, is called inside the function first. This is because Car, Employee and Student class are inherited from ReadWrite class. And then determines what the real object is and finally calls the display() function of the corresponding object.
+
+	The second implementation of the template function is "bool search (Collection <T1> &_obj, const T1 *_arr, int_num, T2_key). And I passed it using the form of "search (Cres, C, (sizeof(C) / sizeof(C[0]), "Tesla")" in main. First, Collection is a template class. What is more surprising is that the Collection template class receives a Car or Student or Employee class as a type. Therefore, the collection and array use the same type name. The data was then added using the template member function defined in the template collection class. Also, key value is different type of from class to class, so I use another type name. As a result, as with the first template function, the types are determined during the compilation phase. Then, a "==" operator is called for each class to compare if it matches. If it matches, call the template function "add" in the Collection class to add the data.
+
+	In conclusion, using templates has the advantage of being able to use various types freely in functions or classes. However, one more lesson is that when multiple types of classes are implemented as a function of a template, the abstract base class is first implemented, then inherited as multiple types of classes, and finally implemented. Also, the template is difficult to debug because the type is determined during the compilation phase. Therefore, you have to make the code carefully when you first make it. As there are such difficulties, I was able to overcome those difficulties through this workshop and use the advantages of templates.
