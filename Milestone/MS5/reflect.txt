@@ -1,0 +1,24 @@
+//==============================================
+// Name:           Jungjoo Kim
+// Student Number: 162 641 195
+// Email:          jkim594@myseneca.ca
+// Section:        NCC
+// Workshop:       Milestone 5
+// ---------------------------------------------
+// Date           Reason
+// 2021/3/28      Completed writing Reflect
+//==============================================
+
+	With this milestone, I implemented a single General Hospital Pre-Triage Application. Implementing a total of five milestones, I had time to review using a lot of what I learned in class.
+
+	First, in the first milestone, I implemented functions that receive values from users using iostream's input and output operator. In this process, a simple cin was used to receive an integer or a character. Also, clear() function was used to initialize the state of the cin when cin was failed, and a newline was erased from the buffer using ignore(). And when I received a value using a specific delimiter, I could use both iostream and string's getline, but I used iostream's getline.
+
+	The second milestone used the concept of class inheritance. After finishing the milestone, I think the second milestone was the most important step. The reason is that I created the IOAble class which is the abstract base class. I created several pure virtual functions and additionally, two help functions which are overloadind operator functions such as ">>" and "<<".
+
+	In the third milestone, two additional classes were created to inherit the previously created IOAble class. These classes used functions that allowed users to enter values, which were previously created in Milestone 1. In the ticket class, time was entered by the user, and in the patient class, patient information was entered by the user. In addition to receiving a value input, I also added a step to save the value by reading the file from the outside. During the third milestone, I could clearly understand the concept of class inheritance.
+
+	In the fourth milestone, the class' inheritance took a step further. We first created two classes to classify the data according to the patient's condition. These classes inherit the patient class created by the previous milestone. Moreover, the patient class inherits the IOAble class. In conclusion, the relationship of the class is two patient state classes > patient classes > IOAble classes. However, there was no difficulty in implementing this milestone because I understood the concept of inheritance well. These two classes work similar to the patient class, patient information was received and stored by the user or file. But I need to be careful not only about inheritance relationships between classes but also about member variables. The reason is that ticket classes have time classes as member variables. And the patient class has such a ticket class as a member variable. Therefore, member functions of each class can also be used using patient's member variables. In conclusion, I have to understand the member functions of all classes and their relationships.
+
+	The last milestone was a little tricky but fun. The reason is that I created a lineup class using various classes and functions that I have implemented so far. In this class, patients were registered predicted the time taken, and treated and advanced the line one by one when treated. I also implement a step to store patient data stacked by terminating the application as a single file. And when I start the application, I first import the file that I saved like this and then start it. In this process, the key point was to understand how much I understood the relationship of the classes and what functions I created played. I used several classes as a member variable, and I could also learn how to initialize those member variable classes while creating the class. Then, a template function was used to receive an array depending on patients' conditions and delete them from the queue in the corresponding state. As a result, I completed the patient application.
+
+	In conclusion, through this milestone, I was able to fully learn to implement a function that receives a value input from the user or a value input from a file. And the inheritance relationship of classes, and the importance of abstract base classes, were also learned.
