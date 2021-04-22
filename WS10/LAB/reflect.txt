@@ -1,0 +1,16 @@
+//==============================================
+// Name:           Jungjoo Kim
+// Student Number: 162 641 195
+// Email:    	   jkim594@myseneca.ca
+// Section:        NCC
+// Workshop:       Workshop10_DIY
+//==============================================
+
+	During the last workshop, I had the opportunity to practice the concepts that I personally thought were important among the things I learned this semester.
+
+	First, I implemented reading and writing files. And this time, I did not use the getline() function of <string> that I used often. Because I had to read character by character in the file. Even the new line(\n). So I used the get() function to read each word until I reached the end of the file. I dynamically allocated member variables that are character pointer type to save the file. Writing or reading files was implemented by overloading the operator<< as help function. I called the write virtual function using the overloaded operator<<. The write function was a virtual function that worked differently depending on who the actual object was. The base class, Text Class, just shows the content, and HtmlText Class shows the normal file in html format. I implemented several more overload functions such as the [] operator and the = operator.
+
+
+	Finally, I learned a new term during this workshop. It is the rule of three. This is a rule that if the destructor, copy constructor, and copy assignment operator defined any of the three, all three must be defined. Basically, c++ provides the above three default functions. But if I use dynamic allocation variables, I will encounter memory leak. This is because the default copy constructor or copy assignment operator performs shallow copies. Also, the destructor does not delete the allocated memory. For these reasons, I safely copied the allocated memory and safely delete it before it was terminated. Also, I implemented a destructor as a virtual destructor because HtmlText class is inherited from Text class.
+
+	I did not feel much difficulty during the last milestone. However, the key point of the last milestone was to properly understand the functions and classes I had implemented before and to understand the inheritance relationship between the classes. Previously created functions were called to implement multiple functions to receive patient data, calculate time, and store data. I then used one template function, which functioned to adjust the standby line according to class type. I think my last milestone was a review of what I have learned in the second semester.
