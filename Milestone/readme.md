@@ -1,4 +1,5 @@
  # Project: General Hospital Pre-Triage Application
+ - Because of the pandemic and prevention of the spread of COVID19, hospitals need to screen the patients and separate those in need of COVID-test from others. This has to be done in an orderly fashion by letting the patients know what is the expected wait time and let them know when they can be admitted. 
  
  ## The goal is to update new modules every week to finally complete one project.
 - [Milestone 1](https://github.com/jjaykim/OOP-Language_CPP/tree/main/Milestone/MS1)
